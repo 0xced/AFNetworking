@@ -30,7 +30,7 @@ before_install:
   - gem install xcpretty --no-rdoc --no-ri --no-document --quiet
 script:
   - set -o pipefail
-  - defaults write com.apple.dt.xcodebuild DVTDefaultLogLevel -int 3
+  - defaults write com.apple.dt.xcodebuild DVTDefaultLogLevel -int 2
   - defaults write com.apple.dt.xcodebuild DVTFilePathLogLevel -int 0
   - defaults write com.apple.dt.xcodebuild DependenciesLogLevel -int 0
   - defaults write com.apple.dt.xcodebuild IDEKVOLogLevel -int 0
